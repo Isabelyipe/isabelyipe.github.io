@@ -1,0 +1,590 @@
+* {
+    box-sizing: border-box;
+}  
+
+html {
+    box-sizing: border-box;
+    font-family: "Proxima Nova";
+}
+
+/* header */
+.center {
+    text-align: center;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.topnav {
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.navlink {
+    display: inline;
+}
+
+.navlink.active {
+    font-weight: bold;
+}
+
+.navlink a {
+    color:black;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.navlink:hover {
+    opacity: 0.5;
+}
+
+.navlink:not(:last-child) {
+    margin-right: 242px;
+}
+
+header {
+    position: relative;
+}
+
+.cart {
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+}  
+
+.cart a{
+    color:black;
+    font-size: 24px;
+}
+
+/* main-products page*/
+.product-browsing-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3rem 5rem;
+}
+
+.box {
+    width: 322px;
+    height: 518px;
+}
+.product-box {
+    margin-top: 15px;
+    margin-bottom: 22px;
+}
+
+.product-box-hover:hover {
+    opacity: 0.7;
+}
+
+.product-name {
+    font-size: 24px;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+    float: right;
+}
+
+.product-color {
+    border-radius: 100px;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    margin-top: 8px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.product-color:hover {
+    opacity: 0.8;
+}
+
+.product-color:focus {
+    outline: none;
+}
+
+.product-pattern-material {
+    font-size: 18px;
+    opacity: 40%;
+    margin-top: 8px;
+}
+
+/* footer */
+
+.footer-margin {
+    margin-top: 43px;
+    margin-bottom: 62px;
+}
+
+
+/* home page*/
+/* home brand section*/
+.box-brand{
+    width: 1400px;
+    height: 300px;;
+    margin-top: 19px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.brand-image {
+    float:left;
+    margin-right: 12px;
+}
+
+.brand-content {
+    width: 15vw;
+    margin: 1rem;
+}
+
+.brand-button{
+    font-size: 18px;
+    background-color: white;
+    padding: 18px 62px;
+    border-radius: 2px;
+    font-family: inherit;
+}
+
+.brand-button:hover{
+    background-color: #FC8C3A;
+    border: none;
+    border-radius: 2px;
+    color:white;
+}
+
+/* home material section*/
+.box-material{
+    width: 1222px;
+    height: 550px;
+    margin-top: 33px;
+    margin-bottom: 58px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 16px rgba(118, 124, 186, 8%);
+    border-radius: 33px;
+    padding: 3rem 0;
+}
+
+.all-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3rem 5rem;
+}
+
+h1 {
+    display: block;
+    margin-left: 10rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.materials-card {
+    width: 287px;
+    height: 360px;
+}
+
+.material-title {
+    font-size: 24px;
+}
+
+.material-description {
+    font-size: 14px;
+}
+
+/* home workshop section*/
+.box-workshop {
+    width: 1030px;
+    height: 573px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.workshop-description {
+    float:left;
+    width: 25vw;
+    padding: 1rem;
+}
+
+.img-position{
+    width: 50vw;
+    padding: 1rem;
+}
+
+.icon-position {
+    position: absolute;
+    right: 4rem;
+    bottom: auto; 
+}
+
+
+/* product detail page */
+/* product detail */
+.box-product {
+    /* width: 1600px;
+    height: 3000px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3rem 5rem;
+}
+
+/* left fixed product description */
+.box-product-detail {
+    position: static;
+    left: 6rem;
+    width: 20vw;
+    margin-right: 5vw;
+}
+
+.product {
+    font-size: 24px;
+}
+
+.product-detail {
+    font-size: 14px;
+}
+
+.rating {
+    width: 20vw;
+}
+
+.comments {
+    width: 20vw;
+}
+
+.arrow-down {
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    margin: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.saved-design {
+    margin-top: 1rem;
+}
+
+/* center scrollable product image */
+.box-product-image {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* right fixed product attribute */
+.box-product-attributes {
+    position: static;
+    width: 20vw;
+    margin-left: 5vw;
+}
+
+.select {
+    font-size: 14px;
+    color: #FC8C3A;
+}
+
+.product-color.selected {
+    border: 2px solid #FC8C3A;
+}
+
+.pattern {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+}
+
+.pattern.img-1 {
+    background-image: url(img/pattern_1.png);
+    background-size: cover;
+}
+
+.pattern.img-2 {
+    background-image: url(img/pattern_2.png);
+    background-size: cover;
+}
+
+.pattern.img-3 {
+    background-image: url(img/pattern_3.png);
+    background-size: cover;
+}
+
+.pattern.selected {
+    border: 2px solid #FC8C3A;
+}
+
+.drop-down {
+    font-size: 18px;
+    background-color: white;
+    padding: 18px 62px;
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+    font-family: inherit;
+    margin-top: 1rem;
+    width: 20vw;
+    position: relative;
+    font-family: inherit;
+}
+
+.drop-down select {
+    display: none; /*hide original SELECT element: */
+}
+  
+.select-selected {
+    background-color: rgb(234, 234, 234);
+}
+  
+  /* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    background-color: red;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+  
+  /* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+  
+  /* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+}
+  
+  /* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: rgb(244, 244, 244);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+  
+  /* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+  
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-content {
+    /* position: absolute; */
+    font-size: 18px;
+    background-color: white;
+    padding: 18px 62px;
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+    font-family: inherit;
+    margin-top: 1rem;
+    width: 20vw;
+    /* border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; */
+  }
+  
+  /* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    font-family: inherit;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.show {
+    display: flex;
+}
+
+.checkout-button {
+    font-size: 24px;
+    background-color: #343434;
+    color: white;
+    padding: 18px 62px;
+    border-radius: 2px;
+    font-family: inherit;
+    margin-top: 2rem; 
+    width: 20vw;
+}
+
+.checkout-button:hover{
+    background-color: white;
+    border-radius: 2px;
+    color:black;
+}
+
+/* .select-material {
+    border-radius: 2px;
+    height: 60px;
+    width: 300px;
+    background-color: white;
+    border-color: black;
+    border-
+} */
+
+
+
+/* similar design */
+.box-similar {
+    text-align:center;
+}
+
+
+.image-margin:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.image-margin {
+    margin-bottom: 3rem;
+}
+
+
+/* Cart page */
+/* back button */
+.box-left {
+    margin-left: 10vw;
+    margin-right: auto;
+}
+
+.back {
+    font-size: 24px;
+}
+
+.arrow-left {
+    border: solid black;
+    border-width: 0 1.5px 1.5px 0;
+    display: inline-block;
+    padding: 4px;
+    margin: 4px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+/* cart */
+.static-cart {
+    margin-left: 10vw;
+    margin-right: auto;
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+/* cart info section */
+.box-cart-detail {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3rem 5rem;
+}
+
+/* left product description */
+.box-cart-left{
+    width: 770px;
+    height: 523px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 0;
+}
+
+.box-cart-product {
+    margin: auto;
+    width: 746px;
+    height: 255px;
+    border: 2px;
+    border-style: solid;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 1rem;
+}
+
+.box-cart-attributes {
+    position: static;
+    margin-left: 3vw;
+}
+
+.cart-product {
+    font-size: 24px;
+    margin-top: 1rem;
+    margin-bottom: auto;
+}
+
+.material-button {
+    font-size: 14px;
+    background-color: white;
+    padding: 8px 15px;
+    border-width: 1px;
+    border-style: solid;
+    font-family: inherit;
+}
+
+.edit {
+    color: #FC8C3A;
+    font-size: 14px;
+}
+
+.remove {
+    font-size: 14px;
+}
+
+.box-cart-price {
+    text-align: right;
+    font-size: 24px;
+}
+
+/* right product checkout */
+.box-cart-right {
+    width: 316px;
+    height: 523px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 77px;
+    margin-right: auto;
+    padding: 1rem 0;
+}
+
+.checkout-warning {
+    font-size: 14px;
+    color: red;
+}

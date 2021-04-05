@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluff Stuff</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jme1jrn.css">
+</head>
+
+<body>
+    <header>
+        <div class="center">
+            <img src="img/Fluff_stuff_logo.png" alt="logo">
+        </div>
+        <div class="topnav">
+            <ul>
+                <li class="navlink"><a href="index.html">Home</a></li>
+                <li class="navlink active"><a href="products.html">Design</a></li>
+                <li class="navlink"><a href="product-detail.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="cart">
+            <a href="#">Cart(<span id="amountDisplay">0</span>)</a>
+        </div>
+    </header>
+    
+    <main>
+        <!--back botton-->
+        <div class="box-left">
+            <p class="back"><span class="arrow-left"></span>　 Back to items</p>
+        </div>
+
+        <!--cart-->
+        <p class="static-cart">　　Cart(1)</p>
+
+        <!--cart info section-->
+        <div class="box-cart-detail">
+            <!--left product description-->
+            <div class="box-cart-left">
+                <div class="box-cart-product">
+                    <img src="img/couch_pillow_1_small.png" alt="couch_pillow_1">
+                    <div class="box-cart-attributes">
+                        <p class="cart-product">Couch Pillow</p>
+                        <p class="cart-product">$45</p>
+                        <button class="product-color" type="button" style="background-color:#E3BD63;"></button>
+                        <p class="material-button">Material</p>
+                        <!-- <br><button class="material-button" type="button">Material</button> -->
+                        <p class="edit">Edit<span class="remove">　　Remove</span></p>
+                    </div>
+                </div>
+                <div class="box-cart-price">
+                    <p>Item　　　　$45</p>
+                    <p>Tax　　　　$3</p>
+                    <p>Order Total　　　　$50</p>
+                </div>
+            </div>
+            <!--right product checkout-->
+            <div class="box-cart-right">
+                <button class="checkout-button" type="button">Checkout</button>
+                <p class="checkout-warning">Shipping fee will be calculated at checkout</p>
+            </div>
+        </div>
+
+        <!--browse more section-->
+        <h1>Browse More Design</h1>
+        <div class="box-similar">
+            <img src="img/Similar_1.png" alt="Similar_1" class="image-margin">
+            <img src="img/Similar_2.png" alt="Similar_2" class="image-margin">
+            <img src="img/Similar_3.png" alt="Similar_3" class="image-margin">
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
