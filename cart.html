@@ -16,13 +16,13 @@
         </div>
         <div class="topnav">
             <ul>
-                <li class="navlink"><a href="index.html">Home</a></li>
+                <li class="navlink"><a href="home.html">Home</a></li>
                 <li class="navlink active"><a href="products.html">Design</a></li>
                 <li class="navlink"><a href="product-detail.html">Contact</a></li>
             </ul>
         </div>
         <div class="cart">
-            <a href="#">Cart(<span id="amountDisplay">0</span>)</a>
+            <a href="cart.html">Cart(<span id="amountDisplay">0</span>)</a>
         </div>
     </header>
     
@@ -33,27 +33,19 @@
         </div>
 
         <!--cart-->
-        <p class="static-cart">　　Cart(1)</p>
+        <!-- <p class="static-cart">　　Cart(<span id="amountDisplay">0</span>)</p> -->
 
         <!--cart info section-->
         <div class="box-cart-detail">
             <!--left product description-->
             <div class="box-cart-left">
-                <div class="box-cart-product">
-                    <img src="img/couch_pillow_1_small.png" alt="couch_pillow_1">
-                    <div class="box-cart-attributes">
-                        <p class="cart-product">Couch Pillow</p>
-                        <p class="cart-product">$45</p>
-                        <button class="product-color" type="button" style="background-color:#E3BD63;"></button>
-                        <p class="material-button">Material</p>
-                        <!-- <br><button class="material-button" type="button">Material</button> -->
-                        <p class="edit">Edit<span class="remove">　　Remove</span></p>
-                    </div>
-                </div>
+                <div id="cart-items"></div>
+                
                 <div class="box-cart-price">
-                    <p>Item　　　　$45</p>
+                    <p>Item　　　　$40</p>
                     <p>Tax　　　　$3</p>
-                    <p>Order Total　　　　$50</p>
+                    <p>Order Total　　　　$43</p>
+                    <br>
                 </div>
             </div>
             <!--right product checkout-->
@@ -63,14 +55,17 @@
             </div>
         </div>
 
+        
+
         <!--browse more section-->
-        <h1>Browse More Design</h1>
+        <!-- <h1>Browse More Design</h1>
         <div class="box-similar">
             <img src="img/Similar_1.png" alt="Similar_1" class="image-margin">
             <img src="img/Similar_2.png" alt="Similar_2" class="image-margin">
             <img src="img/Similar_3.png" alt="Similar_3" class="image-margin">
-        </div>
+        </div> -->
     </main>
-    <script src="app.js"></script>
+    <script src="cartDisplay.js"></script>
+    <script src="addCart.js"></script>
 </body>
 </html>
